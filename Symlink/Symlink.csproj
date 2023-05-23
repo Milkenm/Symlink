@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <ApplicationIcon>Link_PNG.ico</ApplicationIcon>
+    <Title>Symlink</Title>
+    <Description>Window's "mklink" command but with a GUI</Description>
+    <Copyright>Milkenm</Copyright>
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageIcon>Link_PNG.png</PackageIcon>
+    <RepositoryUrl>https://github.com/Milkenm/Symlink</RepositoryUrl>
+    <RepositoryType></RepositoryType>
+    <AssemblyVersion>0.1</AssemblyVersion>
+    <FileVersion>$(AssemblyVersion)</FileVersion>
+    <IncludeSymbols>False</IncludeSymbols>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Company>Milkenm</Company>
+    <Version>$(AssemblyVersion)</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Link_PNG.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Link_PNG.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
